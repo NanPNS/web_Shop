@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgb(78, 45, 22) 0%, rgb(177, 95, 59) );
+}
+
+.slider-container, .slider {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    display: none;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+}
+
+.product-list, .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.product, .selected-products, .total, .customer-form {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 40px;
+    background-color: rgb(255, 226, 195);
+}
+
+.product {
+    width: calc(30% - 20px);
+    border: 5px solid #ffffff;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.quantity-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: none;
+}
+
+.total, .selected-products {
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.selected-products-list {
+    max-height: 200px;
+    overflow: auto;
+}
+
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+h1, .customer-form h2 {
+    text-align: center;
+    color: #f1f1f1;
+    background: linear-gradient(to bottom, rgb(255, 180, 126) 0%, rgb(199, 117, 49) );
+    margin: 0%;
+    padding: 20px;
+}
+
+.bottom-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#customer-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.formA{
+    
+    border: 1px solid #342f2f;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 40px;
+    background-color: rgb(62, 44, 24);
+    color: #ffffff;
+
+
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web3.css">
+    <title>Online Store</title>
+</head>
+<body>
+    <header>
+        <h1>SCI CAFE</h1>
+        <div class="slideshow-container">
+            <div class="slide fade">
+            <img src="1.png" alt="Slide 1">
+            </div>
+            <div class="slide fade">
+            <img src="2.png" alt="Slide 2">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="product-list">
+            <div class="product">
+                <img src="Coffe.png" alt="Product 1">
+                <h3>coffee</h3>
+                <p>Price: $120</p>
+                <button class="quantity-btn">-</button>
+                <span class="quantity">0</span>
+                <button class="quantity-btn">+</button>
+            </div>
+            <div class="product">
+                <img src="Hot Milk.png" alt="Product 2">
+                <h3>Hot Milk</h3>
+                <p>Price: $80</p>
+                <button class="quantity-btn">-</button>
+                <span class="quantity">0</span>
+                <button class="quantity-btn">+</button>
+            </div>
+            <div class="product">
+                <img src="matcha-green-tea-latte.png" alt="Product 1">
+                <h3>matcha greentea latte</h3>
+                <p>Price: $100</p>
+                <button class="quantity-btn">-</button>
+                <span class="quantity">0</span>
+                <button class="quantity-btn">+</button>
+            </div>
+            <div class="product">
+                <img src="Cheese cake.png" alt="Product 2">
+                <h3>Cheese cake</h3>
+                <p>Price: $210</p>
+                <button class="quantity-btn">-</button>
+                <span class="quantity">0</span>
+                <button class="quantity-btn">+</button>
+            </div>
+        </main>
+        <footer>
+            <div class="sidebar">
+                <div class="selected-products">
+                <h2>รายการสินค้า</h2>
+                <ul id="selected-products-list"></ul>
+                </div>
+                <div class="total">
+                <h2>รวมราคา</h2>
+                <p id="total-price">$0.00</p>
+                <p id="discount-info"></p>
+                </div>
+            </div>
+            
+            <div class = "formA">
+                นโยบายการสั่งซื้อ<br>
+                -กรุณากรอกชื่อและที่อยู่ให้ชัดเจน<br>
+                -ถ้าเป็นน้ำ ทางร้านค้าจะแยกน้ำกับน้ำแข็งก่อน<br>
+                -ถ้าเป็นเค้กจะมีกล่องที่พอดีไม่ทำให้หน้าเละ<br>
+
+
+            </div>
+        
+            <div class="customer-form">
+                <h2>รายละเอียดข้อมูลผู้สั่งซื้อ</h2>
+                <form id="customer-info-form">
+                  <label for="name">ชื่อ-นามสกุล:</label>
+                  <input type="text" id="name" name="name" required><br>
+              
+                  <label for="address">ที่อยู่:</label>
+                  <input type="text" id="address" name="address" required><br>
+              
+                  <label for="phone">เบอร์โทร:</label>
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+              
+                  <label for="note">หมายเหตุ:</label>
+                  <textarea id="note" name="note" rows="4"></textarea><br>
+              
+                  <button type="submit">ส่งคำสั่งซื้อ</button>
+                </form>
+              </div>
+    
+    <script src="web3.js"></script>
+</body>
+</html>
